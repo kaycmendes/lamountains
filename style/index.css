@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* set first page background */
+.intro-page {
+    margin: auto;
+    width: 100%;
+    background: url(../background/Background.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 11px;
+    font-size: 7vw;
+    width: auto;
+    height: 0;
+    padding-right: 17vw;
+    position: relative;
+    padding-top: 1vw;
+    letter-spacing: 8px;
+    top: 7.9vw;
+    text-align: center;
+}
+
+.navbar1 {
+    background-color: transparent;
+    position: fixed;
+    margin: auto;
+    z-index: 333;
+    display: block;
+    height: auto;
+    padding: 15px 14em;
+    width: 100%;
+    color: white;
+
+}
+
+.navbar1 a {
+    color: white;
+}
+
+.scroll {
+    transition: 0.6s ease-out;
+    z-index: 999;
+    background-color: #ffffff;
+    position: fixed;
+    margin: auto;
+    display: block;
+    height: auto;
+    padding: 15px 14em;
+    width: 100%;
+}
+
+.scroll a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+    margin: auto;
+    float: left;
+    list-style: none;
+
+}
+
+.nav-item {
+    float: right;
+    padding: 15px;
+    list-style: none;
+    text-decoration-line: underline;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+
+
+header {
+    position: absolute;
+    font-size: xx-large;
+    top: 5em;
+    left: 9.5em;
+}
+
+.first-page {
+    background: url(../background/Background1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title1 {
+    color: #4d4d4d;
+}
+
+.title2 {
+    color: #3e4b66;
+    letter-spacing: 13px;
+}
+
+
+.first-page h2 {
+    font-size: 9vw;
+    padding: 7vw 14vw;
+    top: -10.6vw;
+    position: relative;
+    color: rgba(53, 53, 53, 0.324);
+}
+
+.first-page h3 {
+    color: #414f6b;
+    padding: 0vw 22.9vw;
+    font-size: 3vw;
+    top: -35.9vw;
+    position: relative;
+}
+
+.first-page p,
+.second-page p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    position: relative;
+    top: -38vw;
+    padding: 0 15em;
+
+}
+
+.main-carousel {
+    background-color: #3a475ed4;
+    width: 100%;
+    position: absolute;
+    top: 78.1vh;
+    padding: 1vh 0px;
+    z-index: 99;
+    display: block;
+    height: 22vh;
+}
+
+
+
+.main-carousel img {
+    width: auto;
+    padding: 2vh;
+    height: 147px;
+}
+
+.second-page {
+    font-family: 'Oswald', sans-serif;
+    background: url(../background/birds.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-page h3 {
+    color: #414f6b;
+    padding: 0vw 22.9vw;
+    font-size: 3vw;
+    position: relative;
+    top: -28.3vw;
+    left: 0.6vw;
+}
+
+.second-page h2 {
+    font-size: 9vw;
+    padding: 0 14vw;
+    top: -10vw;
+    position: relative;
+    color: rgba(53, 53, 53, 0.324);
+}
+
+.second-page p {
+    margin: auto;
+    padding: 0 19em;
+    width: 85%;
+    left: 6vw;
+    top: -36vw;
+}
+
+.container {
+    height: 25%;
+    background: white;
+    display: flex;
+    flex-direction: inherit;
+    padding: 15px;
+}
+
+.flickity-button {
+    display: none;
+}
+
+.tab li {
+    padding-left: 30px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background: #3a475ee3;
+    color: #909090;
+    font-size: 1.5em;
+    padding: 0px 9.8em;
+    position: relative;
+    top: -3.5vh;
+}
+
+.tab>li:nth-child(1) {
+    background: #b7b7b7;
+    padding: 5px 15px;
+    text-decoration-line: underline;
+    color: #4b586d;
+}
+
+.tab>li:nth-child(1) a {
+    color: #4b586d;
+}
+
+.tab>li:nth-child(2) a {
+    color: #b7b7b7;
+}
+
+.tab>li:nth-child(2) {
+    color: #b7b7b7;
+}
+
+
+
+
+.schedule {
+    width: 25%;
+    padding: 30px;
+    background: #ffffffab;
+}
+
+.schedule h4 {
+    font-size: 3vw;
+    color: #414f6b;
+}
+
+table {
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
+}
+
+tr th {
+    padding-left: 60px;
+}
+
+.schedule {
+    height: 39%;
+    margin: auto;
+    margin-left: 19em;
+    margin-top: 2em;
+}
+
+.schedule h4 {
+    margin-top: 0;
+}
+
+table {
+    margin-top: -58px;
+    margin-left: -50px;
+}
+
+
+.logo-text {
+    color: #63769d;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    height: 8vh;
+}
+
+.logo-footer {
+    width: 2vw;
+    height: 2vw;
+    margin-top: 1vw;
+    margin-left: 20vw;
+}
+
+footer p {
+    color: #63769d;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    font-size: 0.9vw;
+    margin: auto 0 auto 29vw;
+}
+
+.bootstrap-iso .navbar {
+    display: none;
+}
+
+h5 {
+    margin: 0;
+    margin-top: -11px;
+    top: 20px;
+    position: relative;
+}
+
+.scroll .logo .logo-text>h5:nth-child(1) {
+
+    color: #4d4d4d;
+}
+
+.scroll .logo .logo-text>h5:nth-child(2) {
+    letter-spacing: 1px;
+    color: #3e4b66;
+}
+
+.logo-text>h5:nth-child(2) {
+    letter-spacing: 1px;
+}
+
+
+tr {
+    display: block;
+    padding: 7px;
+}
+
+.logo .logo-text {
+    width: auto;
+    margin-bottom: 2px;
+    font-size: 30px;
+    /* margin: auto; */
+    margin-left: 4rem;
+}
+
+.logo-wrapper {
+    position: relative;
+    top: -0.6em;
+}
+
+
+.logo svg {
+    position: relative;
+    border: 0.1px solid black;
+    border-radius: 100%;
+    top: -44px;
+    width: 50px;
+}
+
+footer .logo-text h5 {
+    font-size: 1.5em;
+    margin-left: 0.5em;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background: #414f6b;
+    height: 12vh;
+    padding: 15px;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .scroll,
+    .navbar1 {
+        display: none;
+        z-index: -1;
+    }
+
+    .bootstrap-iso .navbar {
+        display: block;
+    }
+
+    .bootstrap-iso .navbar-toggler:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: -2em;
+    }
+
+
+    h1 {
+        font-size: 16vw;
+        top: 30vw;
+        padding-top: 11px;
+        left: 6vw;
+        width: 85%;
+    }
+
+    .title {
+        margin: auto;
+        width: -moz-available;
+        position: relative;
+        height: inherit;
+        flex-direction: column;
+    }
+
+
+    .first-page h2 {
+        font-size: 20vw;
+        top: -14.6vw;
+    }
+
+    .first-page h3 {
+        font-size: 8vw;
+        top: -64.9vw;
+        left: 11vw;
+        width: 80%;
+    }
+
+    .first-page p,
+    .second-page p {
+        top: -75vw;
+        padding: 5px 5em;
+        display: flex;
+        font-size: 0.9em;
+        width: 100%;
+        height: 40vh;
+        margin: auto;
+        background: #ffffff96;
+
+    }
+
+    .container>p:nth-child(3) {
+        font-size: 0.9em;
+        top: -33vw;
+        padding: 10px;
+        width: 85%;
+        height: auto;
+    }
+
+    .second-page h3 {
+        left: 0.6vw;
+        left: -13.4vw;
+    }
+
+    .second-page h2 {
+        left: -14vw;
+    }
+
+    .schedule h4 {
+        font-size: 4vw;
+        margin: auto;
+        margin-bottom: 10vw;
+    }
+
+    .schedule {
+        width: 70%;
+        height: 39%;
+        margin: auto;
+        margin-top: auto;
+        margin-left: auto;
+        margin-top: 2em;
+    }
+
+    .tab {
+        padding: 0px 3em;
+        font-size: 1.2em;
+    }
+
+    .logo-footer {
+        width: 71px;
+        height: 71px;
+    }
+
+    footer p {
+        font-size: 10px;
+        margin: 0 4vw;
+        width: 53vw;
+        height: 7vh;
+        margin-top: 1em;
+    }
+
+    footer {
+        height: 13vh;
+    }
+
+    .container {
+        height: 28%;
+    }
+}
